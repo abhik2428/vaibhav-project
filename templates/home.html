@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Dashboard</title>
+</head>
+<body>
+    <h1>Inventory Dashboard</h1>
+    
+    <form method="POST" enctype="multipart/form-data" action="/dashboard">
+        <label for="inventory_file">Upload Inventory CSV:</label>
+        <input type="file" id="inventory_file" name="inventory_file"><br><br>
+        
+        <label for="order_file">Upload Order CSV:</label>
+        <input type="file" id="order_file" name="order_file"><br><br>
+        
+        <input type="submit" value="Generate Dashboard">
+    </form>
+</body>
+</html>

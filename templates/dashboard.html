@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Dashboard</title>
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inventory Vs Order Dashboard</h1>
+    
+    <h2>Graph of Order vs Inventory (Non-Zero Values)</h2>
+    <div class="center">
+        <img src="data:image/png;base64,{{ image }}" alt="Graph">
+    </div>
+    
+    <form method="GET" action="/download">
+        <input type="submit" value="Download new_df.csv">
+    </form>
+</body>
+</html>
